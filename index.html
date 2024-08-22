@@ -114,38 +114,7 @@
         <th scope="col">@NickName</th>
       </tr>
     </thead>
-    <tbody >
-      <tr id="myTable">
-        <tr>
-          <th scope="row">1</th>
-          <td>Caroline</td>
-          <td>Soldan</td>
-          <td>@caroline</td>
-        </tr>
-        <th scope="row">2</th>
-        <td>Dayanna</td>
-        <td>Nuñez</td>
-        <td>@dayanna</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Sebastian</td>
-        <td>Peña</td>
-        <td>@seba</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Claudio</td>
-        <td>Melin</td>
-        <td>@ElMago</td>
-      </tr>
-      <tr>
-        <th scope="row">5</th>
-        <td>Cristobal</td>
-        <td>Varas</td>
-        <td>@Tob4l</td>
-      </tr>
-    </tbody>
+    <tbody id="cuerpo-tabla"></tbody>
   </table>
 
 
@@ -155,9 +124,9 @@
 
 
     <!-- aqui iria el modal -->
-<div class="text-center mt-5">
+<div class="text-center mt-5 mb-5">
   <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
+    Ingresa tus Datos
   </button>
 </div>
 
@@ -166,7 +135,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulario Invitados</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -179,7 +148,7 @@
                   <input type="text" class="form-control" id="inputName" required />
                 </div>
                 <div class="mb-3">
-                  <label for="inputEmail" class="form-label">Email</label>
+                  <label for="inputEmail" class="form-label">Apellido</label>
                   <input
                     type="email"
                     class="form-control"
