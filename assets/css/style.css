@@ -1,21 +1,32 @@
 
 .h1 {
-    background-color: #06ab06;
+    background-color: #a3efa3;
     margin: 40px;
 }
 
 .h3 {
-    background-color: #23068a;
+    background-color: #0c0c0c;
     margin: 40px;
-    
-}
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    justify-content: center;
-    
-}
 
+    
+}
+/* table {
+    width: 300%;
+    border-collapse: center;
+
+  } */
+
+  th {
+    text-align: center; /* Centrado horizontal */
+    /* padding: 10px; */
+    border: 2px solid black;
+  }
+td {
+    text-align: center; /* Centrado horizontal */
+ /*   vertical-align: middle;  Centrado vertical */
+    /* padding: 10px; */
+    border: 2px solid black;  /* tamaño de los bordes de la tabla */
+  }
 
 
 
