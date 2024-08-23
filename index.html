@@ -9,9 +9,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Pull Request Equipo 4</title>
   </head>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  
   <body>
     <!-- aqui van los componentes de boostrap -->
     <!-- Inicio Componente navbar -->
@@ -32,68 +33,64 @@
     <h1 class="h1 text-center text-primary fw-semibold">ANOTATE A LA GRAN FIESTA 18 FULLSTACK</h1>
 
     
-<div class="container"> 
-
-
-  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" data-bs-interval="3000"> <!--data-bs-interval="3000"> Aqui se configura e intervalo de cada imagen en la trancicion  -->
-        <img src="./assets/img/img.png" class="d-block w-100" alt="Pareja de Baile"> <!-- alt="..."> Aqui se configura el nombre descriptivo de las imagenes  -->
+    <div class="container"> 
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000"> <!--data-bs-interval="3000"> Aqui se configura e intervalo de cada imagen en la trancicion  -->
+            <img src="./assets/img/img.png" class="d-block w-100" alt="Pareja de Baile"> <!-- alt="..."> Aqui se configura el nombre descriptivo de las imagenes  -->
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://images.pexels.com/photos/948199/pexels-photo-948199.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./assets/img/image2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./assets/img/imagen3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./assets/img/imagen4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="./assets/img/imagen5.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="https://images.pexels.com/photos/948199/pexels-photo-948199.jpeg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/img/image2.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/img/imagen3.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/img/imagen4.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item" data-bs-interval="3000">
-        <img src="./assets/img/imagen5.png" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
     <!-- Fin carrusel -->
      
 <!-- Se agrega a H3 text-warning bg-dark para cambiar tipo de letra -->
     <h3 class="h3 text-center text-secondary text-warning bg-dark">LISTA CONFIRMADOS</h2>
-<div class="container mt-3">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Apellido</th>
-        <th scope="col">@NickName</th>
-      </tr>
-    </thead>
-    <tbody id="cuerpo-tabla"></tbody>
-  </table>
-
-
-</div>
+    <div class="container mt-3">
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">@NickName</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo-tabla"></tbody>
+        </table>
+    </div>
     
     <!-- Aqui iria una una tajeta con la info de la fiesta -->
 
 
     <!-- aqui iria el modal -->
-<div class="text-center mt-5 mb-5">
-  <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Ingresa tus Datos
-  </button>
-</div>
+    <div class="text-center mt-5 mb-5">
+      <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Ingresa tus Datos
+      </button>
+    </div>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -143,32 +140,32 @@
   </div>
 </div>
 
-<div class="container">
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-           <nav> Información Gran fiesta!!</nav>
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">  <code></code> Fecha 17/08/2024, Lugar y Ubicación</div>
+    <div class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <nav> Información Gran fiesta!!</nav>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">  <code></code> Fecha 17/08/2024, Lugar y Ubicación</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Descripción 
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">¡Únete a nosotros para una noche llena de diversión y celebración en la fiesta de [Nombre del Evento]! Habrá música en vivo, deliciosa comida y bebidas, y muchas sorpresas. ¡No te lo querrás perder! <code></code></div>
+          </div>
+        </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-         Descripción 
-        </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">¡Únete a nosotros para una noche llena de diversión y celebración en la fiesta de [Nombre del Evento]! Habrá música en vivo, deliciosa comida y bebidas, y muchas sorpresas. ¡No te lo querrás perder! <code></code></div>
-      </div>
-    </div>
-      </div>
-    </div>
-  </div>
-</div>
   
     <script src="./assets/js/script_Formu.js"></script>
     <script
